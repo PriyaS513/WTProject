@@ -1,0 +1,341 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+
+/* #studentlogin
+{
+   
+        height: 90vh;
+        background-size: cover; 
+      
+} */
+
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden; /* Ensure no scrollbars are shown */
+}
+
+.background-image {
+  width: 100vw;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /* Adjust the gradient as needed */ 
+  object-fit: cover;
+  position: fixed; /* Make the image fixed to the viewport */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the image is behind other content */
+}
+
+.box.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  z-index: 1;
+  margin-top: 150px;
+}
+
+.login-left, .login-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.login-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center horizontally */
+}
+
+.stud {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; /* Center horizontally */
+}
+
+.stud-1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.underline {
+  width: 90%;
+  height: 2px;
+  background: #000;
+  margin-bottom: 20px;
+}
+
+.input_box {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.input_box img {
+  margin-right: 10px;
+}
+
+.input_box input {
+  width: calc(100% - 30px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.submit1{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2f61ac;
+  color: #fff;
+  cursor: pointer;
+  width: 60%;
+  margin-top:5px ;
+}
+.submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2f61ac;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.submit.gray {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.submit:hover {
+  background-color: #2f61ac;
+}
+.input_box {
+  position: relative;
+  margin-bottom: 7px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input_box span {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #555;
+}
+
+/* .container-login{
+
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(45deg, rgb(19 60 120), rgb(113 152 212));
+    
+} */
+
+/* .container-login .box{
+    position: absolute;
+    width: 550px;
+    top: 40%;
+    left: 50%;
+    margin-bottom:0px;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 25px 25px 45px 25px ;
+    border-radius: 50px;
+
+} */
+/* .stud{
+    text-align: center;
+ 
+    margin-bottom: 0px;
+    position: relative;
+
+   
+    margin-top: 22px;
+    color: #2f61ac;
+    font-size: 40px;
+    font-weight: 700;
+} */
+
+/* .stud-1{
+    text-align: center;
+    
+    margin-top:0px ;
+    position: relative;
+    color: #2f61ac;
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: bold;
+} */
+
+/* .box .input_box{
+    width: 100%;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: auto;
+   
+} */
+
+/* .container-login .box1{
+    top: 50%;
+} */
+/* .box .input_box img{
+    margin: 16px 0px;
+    outline: none;
+} */
+/* .box .input_box input {
+    width: 75%;
+    font-size: 26px;
+    margin: 16px 0px;
+    outline: none;
+    border: none;
+
+} */
+
+/* .submit-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 12px auto;
+} */
+/* .stud ::before{
+    position: absolute;
+    content: " ";
+
+
+} */
+/* .text{
+    color: #2f61ac;
+    font-size: 40px;
+    font-weight: 700;
+} */
+/* 
+.underline{
+   
+    border-radius: 9px; 
+
+    width: 200px;
+    height: 6px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top:0px ;
+    position: relative;
+    background: #2f61ac;
+    font-size: 35px;
+
+} */
+
+/* .inputs{
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 83px;
+    background: #eaeaea;
+    border-radius: 9px;
+    background: none;
+    border: 2px solid black;
+}
+
+.input img{
+    margin: 0px 30px;
+}
+
+.input input{
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    /* color: #797979; */
+/* font-size: 19px; */
+
+/* .forgot-password{
+    padding-left: 62px;
+    margin-top:27px;
+    color: #797979;
+    font-size: 18px;
+} */
+
+/* .forgot-password span{
+    color: #2f61ac;
+    cursor: pointer;
+} */
+
+/* .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    left: 50%;
+    color: #fff;
+    background: linear-gradient(45deg, rgb(19 60 120), rgb(113 152 212));
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight:700;
+    cursor: pointer;
+} */
+
+/* .gray{
+    background: #EAEAEA;
+    color: #676767;
+
+}  */
